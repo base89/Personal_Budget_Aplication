@@ -1,0 +1,95 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.main_box {
+    width: 250px;
+    border: 1px solid lightgrey;
+    margin: 3em auto 0.4em;
+    padding: 2em 2.5em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.top_box h1 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.top_box h2 {
+    font-size: 20px;
+    margin: 0.7em 2em;
+    color: #7e7e7e;
+}
+
+.details_box input {
+    width: 236px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    margin: 0.25em 0;
+    padding-left: 10px;
+    background-color: #f8f8f8;
+}
+
+input::placeholder {
+    color: #a5a5a5;
+    font-size: 0.9em;
+}
+
+.reg_confirm {
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 0;
+    border: 1px solid #90e0ef;
+    border-radius: 7px;
+    background-color: #48cae4;
+    color: white;
+    font-weight: 700;
+}
+
+.log_box {
+    width: 250px;
+    border: 1px solid lightgrey;
+    margin: 0.4em auto 3em;
+    padding: 0.5em 2.5em;
+    background-color: white;
+    text-align: center;
+}
+
+.log_box a {
+    color: #0096c7;
+}
+
+.footer_bar {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #808080;
+}
+
+.info_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.about {
+    margin: 0 1em;
+}
+
+.copy_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
