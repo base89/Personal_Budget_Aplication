@@ -3,7 +3,7 @@ body {
 }
 
 .main_box {
-    width: 250px;
+    width: 258px;
     border: 1px solid lightgrey;
     margin: 3em auto 0.4em;
     padding: 2em 2.5em 2.5em;
@@ -37,6 +37,7 @@ body {
     border-radius: 4px;
     margin: 0.25em 0;
     padding-left: 10px;
+    padding-right: 10px;
     background-color: #f8f8f8;
 }
 
@@ -47,7 +48,7 @@ input::placeholder {
 }
 
 .reg_confirm {
-    width: 250px;
+    width: 100%;
     height: 30px;
     margin-top: 10px;
     padding: 0;
@@ -67,7 +68,7 @@ input::placeholder {
 }
 
 .log_box {
-    width: 258px;
+    width: 266px;
     border: 1px solid lightgrey;
     margin: 0.4em auto 3em;
     padding: 0.5em 2.5em;
