@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registration_app.css">
+    <title>Register to My BudApp</title>
+</head>
+
+<body>
+    <main>
+        <div class="main_box">
+            <div class="top_box">
+                <h1>My BudApp!</h1>
+                <h2>Zacznij zarządzać Swoim Budżetem - bezpłatnie!</h2>
+            </div>
+            <div class="details_box">
+                <form action="/registration" class="registration">
+                    <div class="name">
+                        <input type="text" name="name" placeholder="Imię" required>
+                    </div>
+                    <div class="email">
+                        <input type="email" name="email" placeholder="Adres e-mail" required>
+                    </div>
+                    <div class="pass">
+                        <div id="password">
+                            <input type="password" name="password" placeholder="Hasło" required>
+                        </div>
+                        <div id="confirm_password">
+                            <input type="password" name="password" placeholder="Powtórz hasło" required>
+                        </div>
+                    </div>
+                    <div class="reg_button">
+                        <button class="reg_confirm">Zarejestruj się</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="log_box">
+            <p>Masz konto?
+                <a href="/login">Zaloguj się!</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_bar">
+            <div class="info_bar">
+                <div class="about"><a href="/about">O nas</a></div>
+                <div class="help"><a href="/helpdesk">Pomoc</a></div>
+            </div>
+            <div class="copy_bar">© 2022 My BudApp</div>
+        </div>
+    </footer>
+</body>
+
+</html>
