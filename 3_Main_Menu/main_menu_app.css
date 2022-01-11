@@ -1,0 +1,99 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;;
+}
+
+main {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    display: block;
+}
+
+.logo_box {
+    width: 100%;
+    margin: 1em auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_box h1 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 3em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.navigation_bar {
+    width: 100%;
+    min-width: 835px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303030;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.menu_bar {
+    display: flex;
+}
+
+.menu_list {
+    padding: 0 1em;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-option {
+    padding: 1em;
+    border-right: 1px solid #d1d1d1;
+    text-align: center;
+}
+
+.menu-option:hover {
+    background-color: #585858;
+}
+
+.user_bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user_list {
+    display: flex;
+    list-style-type: none;
+}
+
+.user-option {
+    padding: 1em;
+    border-left: 1px solid #d1d1d1;
+    text-align: center;
+}
+
+.login-user_box {
+    padding: 0.5em 1em 0.5em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user_img {
+    width: 50px;
+    height: 50px;
+}
+
+#user-name_avatar {
+    margin: 0;
+}
