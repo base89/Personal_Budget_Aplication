@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto:wght@300;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="main_menu_app.css">
     <title>Manage Your Finances</title>
@@ -24,7 +24,6 @@
                     <li class="menu-option"><a href="./add_expence">Dodaj wydatek</a></li>
                     <li class="menu-option"><a href="./display_bilance">Przeglądaj bilans</a></li>
                 </ul>
-
             </div>
             <div class="user_bar">
                 <ul class="user_list">
@@ -35,28 +34,30 @@
                     <p id="user-name_avatar">/USER/</p>
                 </div>
             </div>
-
         </div>
         <div class="home_box">
-            <h2>Witaj /user/!</h2>
-            <p>Co chcesz zrobić?</p>
+            <h2>Witaj<span>/user_name/</span></h2>
             <div class="list_box">
-                <ul class="option_list">Wybierz:
-                    <li class="option">Dodaj przychód</li>
-                    <li class="option">Dodaj wydatek</li>
-                    <li class="option">Pokaż bilans finansowy</li>
+                <ul class="option_list">
+                    <p>Co chcesz zrobić?</p>
+                    <li class="option"><a href="./add_income">Dodaj przychód</a></li>
+                    <li class="option"><a href="./add_expence">Dodaj wydatek</a></li>
+                    <li class="option"><a href="./display_bilance">Przeglądaj bilans</a></li>
                 </ul>
             </div>
         </div>
-
     </main>
     <footer>
-        <div class="info_bar">
-            <div class="about">O nas</div>
-            <div class="help">Pomoc</div>
-            <div class="contact">Kontakt</div>
+        <div class="footer_bar">
+            <div class="info_bar">
+                <div class="footer_info"><a href="./about">O nas</a></div>
+                <div class="footer_info"><a href="./helpdesk">Pomoc</a></div>
+                <div class="footer_info"><a href="./contact">Kontakt</a></div>
+            </div>
+            <div class="copy_bar">
+                <p>© 2022 My BudApp</p>
+            </div>
         </div>
-        <div class="copy_bar">© 2022 My BudApp</div>
     </footer>
 </body>
 
