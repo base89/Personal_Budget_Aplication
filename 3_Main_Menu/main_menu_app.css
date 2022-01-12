@@ -99,6 +99,7 @@ footer {
 }
 
 .right_user_nav_box {
+    margin-right: 2em;
     display: flex;
     justify-content: right;
 }
