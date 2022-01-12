@@ -33,10 +33,127 @@ footer {
     margin-block-end: 0;
 }
 
+.mobile_nav_bar {
+    width: 100%;
+    min-width: 360px;
+    height: 40px;
+    padding: 0.5em 1em;
+    background-color: #3b3b3b;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left_nav_box {
+    display: flex;
+    justify-content: left;
+}
+
+.nav_list {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    list-style-type: none;
+    line-height: 200%;
+    display: inline-block;
+    text-align: left;
+}
+
+#menu_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+#menu_img:hover {
+    border-radius: 50%;
+    background-color: #696969;
+}
+
+.nav_list a {
+    display: flex;
+}
+
+.nav_list > .nav-option {
+	display: none;
+    background-color: #38b000;
+	border-top: 1px solid white;
+    color: white;
+    font-size: 14px;
+    justify-content: center;
+    width: 150px;
+    transition: background-color 0.2s;
+}
+
+.nav_list > .nav-option:first-of-type {
+    border-top: unset;
+}
+
+.nav_list > .nav-option:hover {
+    background-color: rgba(56, 176, 0, 0.75);
+}
+
+.nav_list:hover > .nav-option {
+	display: flex;
+}
+
+.right_user_nav_box {
+    display: flex;
+    justify-content: right;
+}
+
+.user_set_list {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    list-style-type: none;
+    line-height: 200%;
+    display: inline-block;
+    text-align: right;
+}
+
+#settings_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+#settings_img:hover {
+    border-radius: 50%;
+    background-color: #696969;
+}
+
+.user_set_list > .user_set-option
+{
+	display: none;
+    background-color: #38b000;
+	border-top: 1px solid white;
+    color: white;
+    font-size: 14px;
+    justify-content: center;
+    width: 150px;
+    transition: background-color 0.2s;
+}
+
+.user_set_list > .user_set-option:first-of-type {
+    border-top: unset;
+}
+
+.user_set_list > .user_set-option:hover {
+    background-color: rgba(56, 176, 0, 0.75);
+}
+
+.user_set_list:hover > .user_set-option
+{
+	display: flex;
+}
+
 .navigation_bar {
     width: 100%;
     min-width: 965px;
-    height: 51px;
+    height: 50px;
     left: 0;
     display: flex;
     flex-direction: row;
@@ -44,9 +161,9 @@ footer {
     align-items: center;
     background-color: #3b3b3b;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .menu_bar {
@@ -104,22 +221,15 @@ footer {
 }
 
 #user_img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     transition: background-color 0.2s;
 }
 
 #user_img:hover {
+    border-radius: 50%;
     background-color: #696969;
-    cursor: pointer;
-}
-
-#user-name_avatar {
-    margin: 0;
-    font-size: 12px;
-}
-
-#user-name_avatar:hover {
     cursor: pointer;
 }
 
@@ -148,14 +258,14 @@ footer {
     color: #929292;
 }
 
-.option_list p {
+.option_list > span {
     font-size: 19px;
     font-weight: 700;
 }
 
 .option {
-    margin: 1em;
-    padding: 1em;
+    margin: 0.5em;
+    padding: 0.5em 2em;
     border: 1px solid lightgrey;
     border-radius: 5px;
     background-color: #38b000;
@@ -164,6 +274,10 @@ footer {
     display: flex;
     justify-content: center;
     transition: background-color 0.2s;
+}
+
+.option:first-of-type {
+    margin-top: 1.3em;
 }
 
 .option a {
@@ -181,6 +295,7 @@ footer {
 }
 
 .info_bar {
+    margin-right: 1em;
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -195,4 +310,37 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 0.7em;
+}
+
+@media (max-width: 965px) {
+    body {
+        background-color: white;
+    }
+
+    .logo_box {
+        min-width: 375px;
+    }
+
+    .mobile_nav_bar {
+        display: flex;
+    }
+
+    .navigation_bar {
+        display: none;
+    }
+
+    .home_box {
+        border: unset;
+    }
+
+    .footer_bar {
+        min-width: 375px;
+    }
+
+    .footer_bar div {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 }
