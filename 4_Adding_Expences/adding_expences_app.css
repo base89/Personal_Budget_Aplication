@@ -1,7 +1,7 @@
 body {
     margin: 0 !important;
     background-color: #f8f8f8;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -263,29 +263,34 @@ footer {
     font-size: 18px;
 }
 
-form > div > label > input, select {
+form > div > label > input, select, textarea {
     cursor: pointer;
     padding: 2px 5px;
     margin-left: 0.1em;
     border: 1px solid lightgrey;
     border-radius: 4px;
     background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 
-form > div > label > input[type="text"], input[type="number"] {
+form > div > label > textarea, input[type="number"] {
     padding: 4px 7px;
 }
 
-input[type="number"] {
-    width: 127px;
+#expence_category {
+    text-align: center;
+    width: 282px;
 }
 
-input[type="text"] {
-    margin-left: 0.5em;
-    width: 250px;
-    height: 2em;
+input[type="number"] {
+    width: 130px;
 }
+
+textarea {
+    margin-left: 0.5em;
+}
+
 #comment_label {
     display: flex;
     flex-direction: row;

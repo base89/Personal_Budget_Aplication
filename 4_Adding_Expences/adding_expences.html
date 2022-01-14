@@ -23,9 +23,9 @@
         <nav class="mobile_nav_bar">
             <div class="left_nav_box">
                 <ul class="nav_list"><img id="menu_img" src="menu_icon_green.png" alt="menu_icon">
-                    <li class="nav-option"><a href="./main_menu.html">Menu Główne</a></li>
+                    <li class="nav-option"><a href="C:/Users/Gabriel/Desktop/Moje_IT/PrzyszlyProgramista/NaukaFrontEnd/Personal_Budget_Aplication/3_Main_Menu/main_menu.html">Menu Główne</a></li>
                     <li class="nav-option"><a href="./add_income">Dodaj przychód</a></li>
-                    <li class="nav-option"><a href="./add_expence">Dodaj wydatek</a></li>
+                    <li class="nav-option"><a href="./adding_expences.html">Dodaj wydatek</a></li>
                     <li class="nav-option"><a href="./display_bilance">Przeglądaj bilans</a></li>
                 </ul>
             </div>
@@ -39,9 +39,9 @@
         <nav class="navigation_bar">
             <div class="menu_bar">
                 <ul class="menu_list">
-                    <li class="menu-option"><a href="./main_menu.html">Menu Główne</a></li>
+                    <li class="menu-option"><a href="C:/Users/Gabriel/Desktop/Moje_IT/PrzyszlyProgramista/NaukaFrontEnd/Personal_Budget_Aplication/3_Main_Menu/main_menu.html">Menu Główne</a></li>
                     <li class="menu-option"><a href="./add_income">Dodaj przychód</a></li>
-                    <li class="menu-option"><a href="./add_expence">Dodaj wydatek</a></li>
+                    <li class="menu-option"><a href="./adding_expences.html">Dodaj wydatek</a></li>
                     <li class="menu-option"><a href="./display_bilance">Przeglądaj bilans</a></li>
                 </ul>
             </div>
@@ -61,18 +61,18 @@
                 <form action="./user/database">
                     <div>
                         <label class="user_expence" for="amount">Kwota
-                            <input class="expence_input" id="amount" name="amount" type="number" step="0.01">
+                            <input class="expence_input" id="amount" name="amount" type="number" min="0" step="0.01" placeholder="np. 99,99" required>
                         </label>
                     </div>
                     <div>
                         <label class="user_expence" for="date">Data
-                            <input class="expence_input" id="date" name="date" type="date" value="2022-01-01">
+                            <input class="expence_input" id="date" name="date" type="date" min="2000-01-01" value="2022-01-01" required>
                         </label>
                     </div>
                     <div>
                         <label class="user_expence" for="payment_method">Sposób płatności
-                            <select name="payment_method" id="payment_method">
-                                <option value="">--Wybierz sposób płatności:--</option>
+                            <select name="payment_method" id="payment_method" required>
+                                <option value="">-- Wybierz sposób płatności: --</option>
                                 <option value="cash">Gotówka</option>
                                 <option value="debit_card">Karta debetowa</option>
                                 <option value="credit_card">Karta kredytowa</option>
@@ -81,8 +81,8 @@
                     </div>
                     <div>
                         <label class="user_expence" for="expence_category">Kategoria
-                            <select name="expence_category" id="expence_category">
-                                <option value="">--Wybierz kategorię wydatku:--</option>
+                            <select name="expence_category" id="expence_category" required>
+                                <option value="">-- Wybierz kategorię wydatku: --</option>
                                 <option value="food">Żywność</option>
                                 <option value="apartment">Mieszkanie</option>
                                 <option value="transport">Transport</option>
@@ -105,7 +105,8 @@
                     </div>
                     <div>
                         <label class="user_expence" id="comment_label" for="comment">Komentarz
-                            <input class="expence_input" id="comment" name="comment" type="text">
+                            <textarea class="expence_input" name="comment" id="comment" cols="34" rows="3"
+                                placeholder="Opcjonalnie..."></textarea>
                         </label>
                     </div>
                     <div class="form_buttons">
