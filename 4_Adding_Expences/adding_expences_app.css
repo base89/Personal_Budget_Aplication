@@ -242,7 +242,7 @@ footer {
 .home_box {
     width: 365px;
     margin: 2em auto;
-    padding: 1em 1em;
+    padding: 1em 2em;
     border: 1px solid lightgrey;
     background-color: white;
     display: flex;
@@ -250,12 +250,45 @@ footer {
     align-items: center;
 }
 
+.home_box > h2 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
 .home_box > form > div {
     margin: 1em auto;
 }
 
+.user_expence {
+    font-size: 18px;
+}
+
 form > div > label > input, select {
     cursor: pointer;
+    padding: 2px 5px;
+    margin-left: 0.1em;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+}
+
+form > div > label > input[type="text"], input[type="number"] {
+    padding: 4px 7px;
+}
+
+input[type="number"] {
+    width: 127px;
+}
+
+input[type="text"] {
+    margin-left: 0.5em;
+    width: 250px;
+    height: 2em;
+}
+#comment_label {
+    display: flex;
+    flex-direction: row;
 }
 
 .form_buttons {
@@ -265,10 +298,24 @@ form > div > label > input, select {
 }
 
 #submit_button, #cancel_button {
-    margin: auto 0.5em;
+    margin: 1em 0.5em;
     line-height: 200%;
-    padding: 0 2em;
+    padding: 0 3em;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #38b000;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid #009b00;
+}
+
+#submit_button:hover {
+    background-color: rgba(56, 176, 0, 0.75);
+}
+
+#cancel_button:hover {
+    background-color: rgba(216, 0, 0, 0.75);
 }
 
 .footer_bar {
