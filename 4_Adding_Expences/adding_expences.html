@@ -1,12 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Expence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="adding_expences_app.css">
+    <title>Add Your New Expence</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="logo_box">
+            <h1>My BudApp!</h1>
+        </div>
+    </header>
+
+    <main>
+        <nav class="mobile_nav_bar">
+            <div class="left_nav_box">
+                <ul class="nav_list"><img id="menu_img" src="menu_icon_green.png" alt="menu_icon">
+                    <li class="nav-option"><a href="C:/Users/Gabriel/Desktop/Moje_IT/PrzyszlyProgramista/NaukaFrontEnd/Personal_Budget_Aplication/3_Main_Menu/main_menu.html">Menu Główne</a></li>
+                    <li class="nav-option"><a href="./add_income">Dodaj przychód</a></li>
+                    <li class="nav-option"><a href="./adding_expences.html">Dodaj wydatek</a></li>
+                    <li class="nav-option"><a href="./display_bilance">Przeglądaj bilans</a></li>
+                </ul>
+            </div>
+            <div class="right_user_nav_box">
+                <ul class="user_set_list"><img id="settings_img" src="user_setting_green.png" alt="settings_icon">
+                    <li class="user_set-option"><a href="./settings">Ustawienia</a></li>
+                    <li class="user_set-option"><a href="./logout">Wyloguj się</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navigation_bar">
+            <div class="menu_bar">
+                <ul class="menu_list">
+                    <li class="menu-option"><a href="C:/Users/Gabriel/Desktop/Moje_IT/PrzyszlyProgramista/NaukaFrontEnd/Personal_Budget_Aplication/3_Main_Menu/main_menu.html">Menu Główne</a></li>
+                    <li class="menu-option"><a href="./add_income">Dodaj przychód</a></li>
+                    <li class="menu-option"><a href="./adding_expences.html">Dodaj wydatek</a></li>
+                    <li class="menu-option"><a href="./display_bilance">Przeglądaj bilans</a></li>
+                </ul>
+            </div>
+            <div class="user_bar">
+                <ul class="user_list">
+                    <li class="user-option"><a href="./settings">Ustawienia</a></li>
+                    <li class="user-option"><a href="./logout">Wyloguj się</a></li>
+                </ul>
+                <div class="login-user_box"><a href="./settings"><img id="user_img" src="user_green.png"
+                            alt="user avatar"></a>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="home_box">
+                <h2>Dodaj wydatek</h2>
+                <form action="./user/database">
+                    <div>
+                        <label class="user_expence" for="amount">Kwota
+                            <input class="expence_input" id="amount" name="amount" type="number" min="0" step="0.01" placeholder="np. 99,99" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="user_expence" for="date">Data
+                            <input class="expence_input" id="date" name="date" type="date" min="2000-01-01" value="2022-01-01" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="user_expence" for="payment_method">Sposób płatności
+                            <select name="payment_method" id="payment_method" required>
+                                <option value="">-- Wybierz sposób płatności: --</option>
+                                <option value="cash">Gotówka</option>
+                                <option value="debit_card">Karta debetowa</option>
+                                <option value="credit_card">Karta kredytowa</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="user_expence" for="expence_category">Kategoria
+                            <select name="expence_category" id="expence_category" required>
+                                <option value="">-- Wybierz kategorię wydatku: --</option>
+                                <option value="food">Żywność</option>
+                                <option value="apartment">Mieszkanie</option>
+                                <option value="transport">Transport</option>
+                                <option value="telecommunications">Telekomunikacja</option>
+                                <option value="healthcare">Opieka zdrowotna</option>
+                                <option value="cloth">Ubranie</option>
+                                <option value="hygiene">Higiena</option>
+                                <option value="children">Dzieci</option>
+                                <option value="entertainment">Rozrywka</option>
+                                <option value="tour">Wycieczka</option>
+                                <option value="training">Szkolenia</option>
+                                <option value="books">Książki</option>
+                                <option value="savings">Oszczędności</option>
+                                <option value="retirement">Na złotą jesień, czyli emeryturę</option>
+                                <option value="repayment">Spłata długów</option>
+                                <option value="donation">Darowizna</option>
+                                <option value="other">Inne wydatki</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="user_expence" id="comment_label" for="comment">Komentarz
+                            <textarea class="expence_input" name="comment" id="comment" cols="34" rows="3"
+                                placeholder="Opcjonalnie..."></textarea>
+                        </label>
+                    </div>
+                    <div class="form_buttons">
+                        <button id="submit_button" type="submit">Dodaj</button>
+                        <button id="cancel_button" type="reset">Anuluj</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_bar">
+            <div class="info_bar">
+                <div class="footer_info"><a href="./about">O nas</a></div>
+                <div class="footer_info"><a href="./helpdesk">Pomoc</a></div>
+                <div class="footer_info"><a href="./contact">Kontakt</a></div>
+            </div>
+            <div class="copy_bar">
+                <p>© 2022 My BudApp</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
