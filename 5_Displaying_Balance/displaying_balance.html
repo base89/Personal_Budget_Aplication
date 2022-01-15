@@ -71,14 +71,14 @@
                         <option value="current_month" selected>Bieżący miesiąc</option>
                         <option value="previous_month">Poprzedni miesiąc</option>
                         <option value="current_year">Bieżący rok</option>
-                        <option id="custom_option" value="custom"><a href="#custom_date_div">Niestandardowy</a></option>
+                        <option id="custom_option" value="custom">Niestandardowy</option>
                     </select>
                     <div id="custom_date_div">
                         <label id="custom_date_title">Podaj daty okresu:</label>
                         <label for="start_date">Data początkowa</label>
-                        <input name="start_date" type="date" min="2000-01-01" value="2022-01-01">
+                        <input id="start_date" name="start_date" type="date" min="2000-01-01" value="2022-01-01">
                         <label for="end_date">Data końcowa</label>
-                        <input name="end_date" type="date" min="2000-01-01" value="2022-01-01">
+                        <input id="end_date" name="end_date" type="date" min="2000-01-01" value="2022-01-01">
                     </div>
                     <button type="submit">Wyświetl bilans</button>
                 </form>
