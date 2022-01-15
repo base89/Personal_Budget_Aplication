@@ -251,13 +251,25 @@ aside {
     text-align: right;
 }
 
-.rightside_menu > label {
+#date_form {
+    width: fit-content;
+    cursor: pointer;
+    padding: 2px 5px;
+    margin: 1em auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#date_form > label {
+    margin: 0.5em auto;
     font-size: 18px;
     font-weight: 700;
 }
 
-.rightside_menu > select {
-    width: 160px;
+#date_form  > select {
     cursor: pointer;
     padding: 2px 5px;
     margin: 1em auto;
@@ -270,15 +282,42 @@ aside {
     flex-direction: column;
 }
 
-.custom_date > form {
-    display: flex;
+#custom_date_div {
+    margin: 0.5em auto;
+    display: none;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#title_custom_date {
-    margin: 1em auto 0.5em;
-    font-size: 18px;
+#custom_date_div:target {
+    display: flex;
+}
+
+#custom_date_title {
+    margin: 0.5em auto;
+    font-size: 17px;
     font-weight: 700;
+}
+
+#date_form > button {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding: 0;
+    border: 1px solid #009b00;
+    border-radius: 6px;
+    background-color: #38b000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+#date_form > button:hover {
+    cursor: pointer;
+    background-color: rgba(56, 176, 0, 0.5);
 }
 
 .footer_bar {
