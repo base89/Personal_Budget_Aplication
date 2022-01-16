@@ -65,7 +65,7 @@
         </nav>
         <aside>
             <div class="rightside_menu">
-                <form id="date_form" action="./user/data">
+                <form id="date_form" action="#">
                     <label for="date_menu">Wybierz okres bilansu:</label>
                     <select name="date_menu" id="date_menu" required>
                         <option value="current_month" selected>Bieżący miesiąc</option>
@@ -85,7 +85,138 @@
             </div>
         </aside>
         <section>
+            <div id="table_box">
+                <table id="income_table">
+                    <caption>BILANS PRZYCHODÓW</caption>
+                    <thead>
+                        <tr>
+                            <th>Kategoria</th>
+                            <th>Przychód</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Wynagrodzenie</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Odsetki bankowe</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Sprzedaż na allegro</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Inne</th>
+                            <td></td>
+                        </tr>
 
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>SUMA</th>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <table id="expence_table">
+                    <caption>BILANS WYDATKÓW</caption>
+                    <thead>
+                        <tr>
+                            <th>Kategoria</th>
+                            <th>Wydatek</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Jedzenie</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Mieszkanie</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Transport</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Telekomunikacja</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Opieka zdrowotna</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Ubranie</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Higiena</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Dzieci</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Rozrywka</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Wycieczka</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Szkolenia</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Książki</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Oszczędności</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Na emeryturę</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Spłata długów</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Darowizna</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Inne wydatki</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>SUMA</th>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div id="balance_box">
+                <table id="balance_table">
+                    <caption>BILANS PRZYCHODÓW I WYDATKÓW</caption>
+                    <thead>
+                        <tr>
+                            <th>Podsumowanie</th>
+                            <td></td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </section>
         <footer>
             <div class="footer_bar">

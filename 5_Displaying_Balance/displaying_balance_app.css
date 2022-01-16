@@ -245,6 +245,7 @@ aside {
     padding: 1em;
     border: 1px solid lightgrey;
     background-color: white;
+    float: right;
     display: flex;
     flex-direction: column;
     align-content: flex-end;
@@ -332,6 +333,110 @@ aside {
     background-color: rgba(56, 176, 0, 0.5);
 }
 
+section {
+    width: fit-content;
+    margin: 2em auto 1em;
+    padding: 1em;
+    border: 1px solid lightgrey;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#table_box {
+    display: flex;
+    flex-direction: row;
+}
+
+#table_box > table {
+    height: fit-content;
+    margin: 0.5em;
+    border-spacing: 0;
+    font-size: 16px;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+caption {
+    padding: 0.7em 1em 0.5em;
+    margin: 0 auto 2px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #f1f1f1;
+}
+
+#table_box > table > thead th {
+    background-color: #014f86;
+    color: white;
+    padding: 1em;
+    border-color: white;
+}
+
+#table_box > table > tbody th {
+    padding: 0.3em 0.6em;
+    background-color: #f1f1f1;
+    border-color: white;
+}
+
+#table_box > table th, td {
+    padding: 0.2em 0.4em;
+    border: 1px solid lightgrey;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+#table_box > table th:last-child {
+    border-right-width: 0;
+}
+
+th:last-child, td:last-child {
+    border-right-width: 0;
+}
+
+tfoot > tr > td {
+    border-bottom-width: 0;
+}
+
+#table_box > table > tfoot th {
+    border-bottom-width: 0;
+}
+
+#table_box > table > tfoot > tr > * {
+    padding: 0.5em 1em;
+    background-color: #edae49;
+    color: white;
+    border-color: white;
+}
+
+#balance_box {
+    margin: 0.5em auto;
+}
+
+#balance_table {
+    margin: 0.5em;
+    border-spacing: 0;
+    font-size: 16px;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+#balance_box > #balance_table > thead > tr > * {
+    padding: 0.5em 1em;
+    background-color: #edae49;
+    color: white;
+    border-color: white;
+    border-bottom-width: 0;
+}
+
+#balance_box > #balance_table > thead > tr > th {
+    width: 60%;
+    border-right: 1px solid white;
+}
+
+#balance_box > #balance_table > caption {
+    white-space: nowrap;
+}
+
 .footer_bar {
     margin: 1em auto;
     color: #808080;
@@ -354,7 +459,6 @@ aside {
     justify-content: center;
     font-size: 0.7em;
 }
-
 
 @media (max-width: 965px) {
     body {
