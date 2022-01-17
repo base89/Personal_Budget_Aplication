@@ -350,7 +350,7 @@ section {
 
 #table_box > table {
     height: fit-content;
-    margin: 0.5em;
+    margin: 1em;
     border-spacing: 0;
     font-size: 16px;
     border-radius: 1em;
@@ -437,6 +437,35 @@ tfoot > tr > td {
     white-space: nowrap;
 }
 
+#bottom_cap {
+    caption-side: bottom;
+    padding: 0.7em;
+    background-color: #38b000;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+#chart_box {
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chart_box > h3 {
+    margin: 0.5em auto;
+    font-size: 22px;
+}
+
+#pie_chart {
+    height: 350px;
+    width: 350px;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: conic-gradient(#dad7cd 0.00%, #ffca3a 0.00% 0.55%, #8ac926 0.55% 6.08%, #1982c4 6.08% 13.68%, #6a4c93 13.68% 23.27%, #723d46 23.27% 40.47%, #ff595e 40.47%);
+}
+
 .footer_bar {
     margin: 1em auto;
     color: #808080;
@@ -477,8 +506,20 @@ tfoot > tr > td {
         display: none;
     }
 
+    aside {
+        margin-right: auto;
+        float: none;
+        align-content: center;
+        text-align: center;
+    }
+
     .home_box {
         border: unset;
+    }
+
+    #table_box {
+        border: unset;
+        flex-direction: column;
     }
 
     .footer_bar {
