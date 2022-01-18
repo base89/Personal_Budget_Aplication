@@ -494,6 +494,10 @@ tfoot > tr > td {
         background-color: white;
     }
 
+    main {
+        min-width: 405px;
+    }
+
     .logo_box {
         min-width: 375px;
     }
@@ -513,12 +517,11 @@ tfoot > tr > td {
         text-align: center;
     }
 
-    .home_box {
+    section {
         border: unset;
     }
 
     #table_box {
-        border: unset;
         flex-direction: column;
     }
 
